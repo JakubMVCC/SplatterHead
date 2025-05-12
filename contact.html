@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- 
+Student Name: Jakub
+Date: 5/14/2025
+File Name: contact.html
+
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Splatter Head</title>
+    <meta name="description" content="Contact Jakub, the creator of Splatter Head, for inquiries or to submit your entry for the zombie contest.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blurred-background">
+            <header>
+                <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+            </header>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="behind.html">Behind the Scenes</a></li>
+                <li><a href="contest.html">Contest</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="extra.html">Extra</a></li>
+            </ul>
+        </nav>
+        <div class="corner-ribbon">
+            <a href="contest.html">WIN A<br>CHANCE TO<br>HAVE YOURSELF<br>ANIMATED AS A ZOMBIE!!!</a>
+        </div>
+        <main class="page-content">
+            <h1>Contact Me</h1>
+            <section aria-labelledby="contact-intro">
+                <h2 id="contact-intro" class="visually-hidden">Introduction to Contacting</h2>
+                <div class="paragraph-with-image image-left">
+                    <img src="https://i.imgur.com/dRCMCfn.jpeg" alt="Image of Jakub, the creator, for the Contact Page" class="paragraph-image-left">
+                    <p class="paragraph-text">I'm dying to hear from you! Whether you have a burning question about Splatter Head, want to submit your entry for the zombie contest, or just want to share your love for claymation gore, this is the place to reach out. I'm always listening from beyond the grave... or at least, from behind the computer screen.</p>
+                </div>
+                <div style="clear: both;"></div>
+            </section>
+
+            <section aria-labelledby="contact-form-heading">
+                <form id="contact-form" action="https://formspree.io/f/meogrqoa" method="POST">
+                    <h2 id="contact-form-heading">Contact Form</h2>
+                    <p>Use this form for general inquiries or to submit your contest entry details.</p>
+                    <div>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div>
+                        <label for="message">Message (Include contest details here if applicable):</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </section>
+
+            <div id="form-thank-you" style="display: none;" role="alert" aria-live="assertive">
+                <h2>Thanks for reaching out, fresh meat!</h2>
+                <p>I've received your message and will get to it. If you're entering the zombie contest, good luck! You might just rise again... In Clay. I'll get back to you faster than a graveyard shift worker running from a zombie horde.</p>
+            </div>
+
+            <section class="social-media-section" aria-labelledby="social-media-heading">
+                <h2 id="social-media-heading">Join the Horde!</h2>
+                <p>Stay updated with every brain chomping update, behind the scenes sneak peek, and exclusive contest news. Follow the gory journey of Splatter Head across the dark corners of the internet.</p>
+                <div class="social-links">
+                    <a href="https://x.com/TheSplatterHead" target="_blank" rel="noopener noreferrer" title="Follow Splatter Head on X (formerly Twitter)">
+                        <img src="https://i.imgur.com/LUv0mID.png" alt="X (formerly Twitter) Icon">
+                    </a>
+                    <a href="https://www.youtube.com/@SplatterHead" target="_blank" rel="noopener noreferrer" title="Subscribe to Splatter Head on YouTube">
+                        <img src="https://i.imgur.com/LxE1dvN.png" alt="YouTube Icon">
+                    </a>
+                </div>
+                <p>Hit that follow button, spread the word like a zombie virus, and help me bring this army of clay abominations to life!</p>
+            </section>
+        </main>
+        <footer>
+            <p><small>© 2025 Splatter Head - Created by <a href="contact.html">Jakub</a></small></p>
+        </footer>
+    </div>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const thankYou = document.getElementById('form-thank-you');
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                form.style.display = 'none';
+                thankYou.style.display = 'block';
+            } else {
+                alert('There was a problem sending your message. Please try again.');
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

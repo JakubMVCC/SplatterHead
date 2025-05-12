@@ -1,0 +1,88 @@
+/*
+Student Name: Jakub
+Date: 5/14/2025
+File Name: styles-gallery.css
+*/
+
+.gallery-grid {
+    margin-top: 30px; position: relative; 
+}
+
+.gallery-item {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+    width: calc(33.33% - 20px); 
+    box-sizing: border-box; }
+
+.gallery-item a:focus img,
+.gallery-item video:focus {
+    outline: 3px solid #ff7f50;
+    outline-offset: 2px; }
+
+.gallery-grid.storyboard-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    position: static; 
+    margin: 30px auto; width: 90%;
+    max-width: 1000px;
+}
+
+.storyboard-grid .gallery-item {
+    margin: 0; 
+    width: auto; 
+}
+
+@media (min-width: 769px) {
+    .gallery-grid.storyboard-grid {
+        grid-template-columns: repeat(3, 1fr); }
+}
+
+
+@media (max-width: 768px) {
+    .gallery-item:not(.storyboard-grid .gallery-item) { 
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item:not(.storyboard-grid .gallery-item) {
+        width: calc(100% - 20px); 
+    }
+}
+
+.gallery-item img, .gallery-item video {
+    max-width: 100%;
+    height: auto; display: block;
+    margin-bottom: 10px;
+    
+    flex-shrink: 0; 
+    padding: 0; }
+
+.gallery-item p {
+    font-style: italic;
+    color: #aaa;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    flex-grow: 1; 
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0; text-align: center;
+}
+
+.featherlight .featherlight-content img {
+    display: block; 
+    padding: 0; margin: 0;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 0 !important; 
+}
