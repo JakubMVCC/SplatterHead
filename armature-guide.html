@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
 Student Name: Jakub
-Date: 5/14/2025
+Date: 12/03/2025
 File Name: armature-guide.html
 
  -->
@@ -16,42 +16,50 @@ File Name: armature-guide.html
     <link href="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" rel="stylesheet">
     <style>
         .image-block-below-text {
-            display: block; max-width: 80%;
+            display: block;
+            max-width: 80%;
             height: auto;
             margin: 20px auto;
             border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
 
         .simple-image-gallery {
-            display: flex; flex-wrap: wrap;
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
             padding: 20px 0;
         }
 
         .simple-image-gallery .gallery-image-container img {
-            max-width: 150px; height: auto;
+            max-width: 150px;
+            height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: pointer; }
-
-        .paragraph-with-image a img {
-            cursor: pointer; }
-
-        .featherlight .featherlight-content {
-            border: 10px solid #000000; background: #000000;
-            padding: 5px;
+            cursor: pointer;
         }
 
-        
+        .paragraph-with-image a img {
+            cursor: pointer;
+        }
+
+        .featherlight .featherlight-content {
+            border: 10px solid #000000;
+            background: #000000;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="blurred-background">
             <header>
-                <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                <div class="logo-wrapper">
+                    <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                    <p class="header-tagline">Dying for a Drink.</p>
+                </div>
             </header>
         </div>
         <nav>
@@ -59,9 +67,10 @@ File Name: armature-guide.html
                  <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="behind.html">Behind the Scenes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contest.html">Contest</a></li>
+                <li><a href="resources.html">Resources</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                 <li><a href="extra.html">Extra</a></li>
             </ul>
         </nav>
         <div class="corner-ribbon">
@@ -80,14 +89,14 @@ File Name: armature-guide.html
             <div>
                 <h3>Materials List:</h3>
                 <a href="images/Armature_Image_1.png" data-featherlight="image">
-                     <img src="images/Armature_Image_1.png" alt="Armature Materials and Tools" class="image-block-below-text" style="cursor:pointer;">
+                    <img src="images/Armature_Image_1.png" alt="Armature Materials and Tools" class="image-block-below-text" style="cursor:pointer;">
                 </a>
             </div>
 
             <h3></h3>
             <div><a href="images/Armature_Image_2.png" data-featherlight="image"><img src="images/Armature_Image_2.png" alt="Image for step 1 - Plan and Sketch" style="max-width: 850px; height: auto;"></a></div>
             <h3></h3>
-             <div><a href="images/Armature_Image_3.png" data-featherlight="image"><img src="images/Armature_Image_3.png" alt="Image for step 2 - Form the Wire Skeleton" style="max-width: 850px; height: auto;"></a></div>
+            <div><a href="images/Armature_Image_3.png" data-featherlight="image"><img src="images/Armature_Image_3.png" alt="Image for step 2 - Form the Wire Skeleton" style="max-width: 850px; height: auto;"></a></div>
             <h3></h3>
             <div><a href="images/Armature_Image_4.png" data-featherlight="image"><img src="images/Armature_Image_4.png" alt="Image for step 3 - Twist for Strength" style="max-width: 850px; height: auto;"></a></div>
             <h3></h3>
@@ -104,23 +113,23 @@ File Name: armature-guide.html
                 <a href="images/Armature_QuickTips.png" data-featherlight="image">
                     <img src="images/Armature_QuickTips.png" alt="Image of quick tips" class="image-block-below-text" style="cursor:pointer;">
                 </a>
-             </div>
+            </div>
 
             <section class="extra-armature-gallery">
                 <h2>Extra Armature Building Images</h2>
                 <p>Here are some more tools I used during the armature building process. Click on an image to view it larger.</p>
                 <div class="gallery-grid">
-                     <div class="gallery-item"><a href="https://i.imgur.com/CcAYM8I.jpeg" data-featherlight="image"><img src="https://i.imgur.com/CcAYM8I.jpeg" alt="Extra Armature Image 1" loading="lazy" style="width:300px;height:200px;"></a><p>I bought a lot of clay. On the left is "Oven Bake" that hardens whereas on the right is "Never Dries" which is what I'd recommend for Stop Motion.</p></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/CcAYM8I.jpeg" data-featherlight="image"><img src="https://i.imgur.com/CcAYM8I.jpeg" alt="Extra Armature Image 1" loading="lazy" style="width:300px;height:200px;"></a><p>I bought a lot of clay. On the left is "Oven Bake" that hardens whereas on the right is "Never Dries" which is what I'd recommend for Stop Motion.</p></div>
                     <div class="gallery-item"><a href="https://i.imgur.com/cWgf4yG.jpeg" data-featherlight="image"><img src="https://i.imgur.com/cWgf4yG.jpeg" alt="Extra Armature Image 4" loading="lazy" style="width:300px;height:200px;"></a><p>A Hot Glue Gun for attaching the magnets, glasses, hat, and the set together.</p></div>
-                     <div class="gallery-item"><a href="https://i.imgur.com/Ajf6RHw.jpeg" data-featherlight="image"><img src="https://i.imgur.com/Ajf6RHw.jpeg" alt="Extra Armature Image 3" loading="lazy" style="width:300px;height:200px;"></a><p>A lot of paint brushes and sharpies were also used during Splatter Head.</p></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/Ajf6RHw.jpeg" data-featherlight="image"><img src="https://i.imgur.com/Ajf6RHw.jpeg" alt="Extra Armature Image 3" loading="lazy" style="width:300px;height:200px;"></a><p>A lot of paint brushes and sharpies were also used during Splatter Head.</p></div>
                     <div class="gallery-item"><a href="https://i.imgur.com/hTM86jd.jpeg" data-featherlight="image"><img src="https://i.imgur.com/hTM86jd.jpeg" alt="Extra Armature Image 2" loading="lazy" style="width:300px;height:200px;"></a><p>I took apart some "Helping Hands" and combined them with a Clamp that can rotate to make a DIY Animation Rig.</p></div>
-                     <div class="gallery-item"><a href="https://i.imgur.com/wUQokhr.jpeg" data-featherlight="image"><img src="https://i.imgur.com/wUQokhr.jpeg" alt="Extra Armature Image 5" loading="lazy" style="width:300px;height:200px;"></a><p>Without this Animation Rig, I would not have been able to get even one scene finished.</p></div>
+                    <div class="gallery-item"><a href="https://i.imgur.com/wUQokhr.jpeg" data-featherlight="image"><img src="https://i.imgur.com/wUQokhr.jpeg" alt="Extra Armature Image 5" loading="lazy" style="width:300px;height:200px;"></a><p>Without this Animation Rig, I would not have been able to get even one scene finished.</p></div>
                     <div class="gallery-item"><a href="https://i.imgur.com/i28XRTD.jpeg" data-featherlight="image"><img src="https://i.imgur.com/i28XRTD.jpeg" alt="Extra Armature Image 6" loading="lazy" style="width:300px;height:200px;"></a><p>Here are the "Helping Hands" I took apart.</p></div>
                 </div>
             </section>
-         </main>
+        </main>
         <footer>
-            <p>© 2025 Splatter Head - Created by <a href="contact.html">Jakub</a></p>
+            <p><small>© 2024 - 2026 Splatter Head | Created by <a href="contact.html">Jakub</a></small></p>
         </footer>
     </div>
 
@@ -131,15 +140,17 @@ File Name: armature-guide.html
     <script src="script.js"></script>
     <script>
         $(document).ready(function () {
-            $('a[data-featherlight="image"]').featherlight(); var $galleryGrid = $('.extra-armature-gallery .gallery-grid');
+            $('a[data-featherlight="image"]').featherlight();
+            var $galleryGrid = $('.extra-armature-gallery .gallery-grid');
             $galleryGrid.imagesLoaded(function () {
                 $galleryGrid.masonry({
                     itemSelector: '.gallery-item',
                     columnWidth: '.gallery-item',
                     percentPosition: true,
-                     gutter: 0
+                    gutter: 0
                 });
-            }); });
+            });
+        });
     </script>
 </body>
 </html>

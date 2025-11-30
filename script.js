@@ -1,5 +1,5 @@
 // Student Name: Jakub
-// Date: 5/14/2025
+// Date: 12/03/2025
 // File Name: script.js
 
 document.addEventListener('DOMContentLoaded', function() {

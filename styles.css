@@ -105,13 +105,15 @@ header {
     max-width: 280px;
     height: auto;
     display: block; margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
 }
 
 nav {
     background: #f35628; 
     color: white;
     text-align: center;
-    padding: 15px 0; width: 100%;
+    padding: 11px 0;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -176,7 +178,8 @@ nav ul li a:focus {
     position: relative;
     transform: rotate(-45deg);
     top: -50px;
-    left: -50px; width: 100%;
+    left: -50px; 
+    width: 100%;
     line-height: 1.2;
     white-space: pre-line;
     word-wrap: break-word;
@@ -548,10 +551,10 @@ section strong {
 .faq-answer.active,
 .extra-answer.active {
     padding: 15px 20px;
-    max-height: 500px; /* Adjusted to allow more content */
+    max-height: 500px;
 }
 .extra-answer iframe { 
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 
@@ -568,7 +571,7 @@ footer {
     width: 100%;
     box-sizing: border-box;
     z-index: 5;
-    position: relative; 
+    position: relative;
 }
 
 .social-links {
@@ -595,10 +598,48 @@ footer {
     padding: 5px;
 }
 
+.logo-wrapper {
+    display: inline-block;
+    position: relative;
+    cursor: default;
+}
+
+.logo-wrapper:hover .logo {
+    opacity: 0;
+}
+
+.header-tagline {
+    color: #ff7f50;
+    font-family: 'Friday Hype', Impact, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width: 400px; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.logo-wrapper:hover .header-tagline {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 @media (max-width: 768px) {
     h1 { font-size: 2.2em; }
-    h2 { font-size: 1.7em; }
+    h2 { font-size: 1.7em;
+    }
     h3 { font-size: 1.4em; }
 
     nav {
@@ -607,7 +648,7 @@ footer {
 
     nav ul {
         flex-direction: column;
-        gap: 5px 0; 
+        gap: 5px 0;
     }
 
     nav ul li a {
@@ -709,7 +750,8 @@ footer {
 
 @media (max-width: 480px) {
     h1 { font-size: 1.8em; }
-    h2 { font-size: 1.5em; }
+    h2 { font-size: 1.5em;
+    }
     h3 { font-size: 1.2em; }
 
     .logo {

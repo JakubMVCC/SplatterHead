@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
 Student Name: Jakub
-Date: 5/14/2025
+Date: 12/03/2025
 File Name: index.html
 
  -->
@@ -11,14 +11,17 @@ File Name: index.html
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Splatter Head - Home</title>
-        <meta name="description" content="Watch Splatter Head, a cheesy claymation action adventure by Jakub. Follow one man's struggle for a new soda in a zombie infested world.">
+        <meta name="description" content="Dying for a Drink. Watch Splatter Head, a cheesy claymation action adventure by Jakub. Follow one man's struggle for a new soda in a zombie infested world.">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container">
             <div class="blurred-background">
                 <header>
-                    <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                    <div class="logo-wrapper">
+                        <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                        <p class="header-tagline">Dying for a Drink.</p>
+                    </div>
                 </header>
             </div>
              <nav aria-label="Main navigation">
@@ -26,45 +29,76 @@ File Name: index.html
                     <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="behind.html">Behind the Scenes</a></li>
-                     <li><a href="contest.html">Contest</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+                    <li><a href="resources.html">Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="extra.html">Extra</a></li>
                 </ul>
             </nav>
             <div class="corner-ribbon">
                  <a href="contest.html">WIN A<br>CHANCE TO<br>HAVE YOURSELF<br>ANIMATED AS A ZOMBIE!!!</a>
             </div>
             <main class="page-content">
-                <section class="hero" aria-labelledby="hero-heading">
+                <section class="hero" aria-labelledby="hero-heading" style="margin-bottom: 0; padding-bottom: 10px;">
                     <h1 id="hero-heading">Watch Splatter Head!</h1>
-                     <h3>A cheesy Claymation action adventure that started as a Final Project but turned into one man's struggle towards satisfying his craving for a new soda in a zombie infested world.</h3>
+                     <h3>A cheesy Claymation action adventure that started as a Final Project but turned into one man's struggle towards satisfying his craving for a new soda while surviving a zombie infestation.</h3>
                     <div class="video-container">
                         <video controls poster="images/SplatterHead_Poster.jpg">
                              <source src="extra/SplatterHead.mp4" type="video/mp4">
                             <p>
-                                Your browser doesn't support the video tag, or the local file could not be accessed. You can <a href="http://tiny.cc/SplatterHeadJakubMVCC" target="_blank" rel="noopener noreferrer">watch the latest version of Splatter Head HERE</a>. </p>
+                                Your browser doesn't support the video tag, or the local file could not be accessed.
+                                You can <a href="http://tiny.cc/SplatterHeadJakubMVCC" target="_blank" rel="noopener noreferrer">watch the latest version of Splatter Head HERE</a>.
+                            </p>
                         </video>
                     </div>
+
                     <p><br>Youtube's Music Copyright won't let me embed, so if the above video doesn't play then enjoy the <strong>latest version of Splatter Head</strong> by clicking <a href="http://tiny.cc/SplatterHeadJakubMVCC" target="_blank" rel="noopener noreferrer">HERE</a>.</p>
-                 </section>
-                <section class="end-credits" aria-labelledby="credits-heading">
+
+                    <div style="max-width: 800px; margin: 30px auto 10px auto; text-align: left;">
+                        <details style="background: rgba(0,0,0,0.4); border: 1px solid #444; border-radius: 8px; overflow: hidden;">
+                            <summary style="padding: 15px 25px; cursor: pointer; color: #ffcc66; font-weight: bold; font-size: 1.1em; background-color: rgba(255, 255, 255, 0.05);">
+                                ⚠️ Project Status Update (Click to View)
+                            </summary>
+                            <div style="padding: 25px; border-top: 1px solid #555;">
+                                <p style="color: #e0e0e0; font-size: 1em; line-height: 1.5; margin-top: 0;">
+                                    I haven't had as much time to work on Splatter Head as I would like, but I will finish it whenever I can. The project is currently scheduled to be completed in 20XX.
+                                </p>
+                                <div style="margin-top: 20px;">
+                                    <div style="display: flex; justify-content: space-between; color: #f35628; font-weight: bold; font-size: 0.9em; margin-bottom: 5px;">
+                                        <span>Storyboard Panels Finished</span>
+                                        <span>41 / 89</span>
+                                    </div>
+                                    <div style="background-color: #333; width: 100%; height: 24px; border-radius: 12px; border: 1px solid #666; overflow: hidden;">
+                                        <div style="width: 46%; height: 100%; background-color: #faa1ff; text-align: center; line-height: 24px; color: #ffffff; font-weight: bold; font-size: 0.8em; text-shadow: 0px 0px 3px rgba(0,0,0,0.8);">46%</div>
+                                    </div>
+                                    <p style="font-size: 0.85em; color: #aaa; margin-top: 8px; font-style: italic;">
+                                        *Current count includes scenes that still need more VFX fixes as well as improvements.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    </section>
+                <section class="end-credits" aria-labelledby="credits-heading" style="margin-top: 0;">
                     <h2 id="credits-heading">Splatter Head wouldn't have been possible without...</h2>
                     <ul>
                         <li><b>Jermaine</b> as News Reporter (Voice)</li>
                         <li><b>My College Adobe Courses</b> for sparking this Idea</li>
                         <li><b>My Teachers</b> for encouraging my Creativity</li>
                         <li><b>My Classmates</b> for the drive to keep Improving</li>
-                         <li><b>You</b> for taking the time to watch Splatter Head</li>
+                        <li><b>You</b> for taking the time to watch Splatter Head</li>
                     </ul>
                     <br>
                     <p>
-                         <a href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener noreferrer">Adobe Premiere Pro</a> | <a href="https://www.adobe.com/products/aftereffects.html" target="_blank" rel="noopener noreferrer">After Effects</a> | <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer">Photoshop</a> | <a href="https://www.dragonframe.com/" target="_blank" rel="noopener noreferrer">Dragonframe</a> | <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">Blender</a>
+                        <a href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener noreferrer">Adobe Premiere Pro</a> |
+                        <a href="https://www.adobe.com/products/aftereffects.html" target="_blank" rel="noopener noreferrer">After Effects</a> | <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer">Photoshop</a> | <a href="https://www.dragonframe.com/" target="_blank" rel="noopener noreferrer">Dragonframe</a> |
+                        <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">Blender</a>
                     </p>
                 </section>
             </main>
             <footer>
-                <p lang="en-US"> <small>© 2025 Splatter Head - Created by <a href="contact.html">Jakub</a></small> </p>
-             </footer>
+                <p><small>© 2024 - 2026 Splatter Head | Created by <a href="contact.html">Jakub</a></small></p>
+            </footer>
         </div>
         <script src="script.js"></script>
     </body>

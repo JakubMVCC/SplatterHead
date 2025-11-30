@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!-- 
 Student Name: Jakub
-Date: 5/14/2025
+Date: 12/03/2025
 File Name: contact.html
 
  -->
+ 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +18,10 @@ File Name: contact.html
     <div class="container">
         <div class="blurred-background">
             <header>
-                <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                <div class="logo-wrapper">
+                    <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                    <p class="header-tagline">Dying for a Drink.</p>
+                </div>
             </header>
         </div>
         <nav aria-label="Main navigation">
@@ -25,9 +29,10 @@ File Name: contact.html
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="behind.html">Behind the Scenes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contest.html">Contest</a></li>
+                <li><a href="resources.html">Resources</a></li>
                 <li><a href="contact.html" aria-current="page">Contact</a></li>
-                <li><a href="extra.html">Extra</a></li>
             </ul>
         </nav>
         <div class="corner-ribbon">
@@ -36,7 +41,6 @@ File Name: contact.html
         <main class="page-content">
             <h1>Contact Me</h1>
             <section aria-labelledby="contact-intro">
-                <h2 id="contact-intro" class="visually-hidden">Introduction to Contacting</h2>
                 <div class="paragraph-with-image image-left">
                     <img src="https://i.imgur.com/dRCMCfn.jpeg" alt="Image of Jakub, the creator, for the Contact Page" class="paragraph-image-left">
                     <p class="paragraph-text">I'm dying to hear from you! Whether you have a burning question about Splatter Head, want to submit your entry for the zombie contest, or just want to share your love for claymation gore, this is the place to reach out. I'm always listening from beyond the grave... or at least, from behind the computer screen.</p>
@@ -75,29 +79,28 @@ File Name: contact.html
                 <p>I've received your message and will get to it. If you're entering the zombie contest, good luck! You might just rise again... In Clay. I'll get back to you faster than a graveyard shift worker running from a zombie horde.</p>
             </div>
 
-            <section class="social-media-section" aria-labelledby="social-media-heading">
+            <section class="social-media-section" aria-labelledby="social-media-heading" style="text-align: center;">
                 <h2 id="social-media-heading">Join the Horde!</h2>
-                <p>Stay updated with every brain chomping update, behind the scenes sneak peek, and exclusive contest news. Follow the gory journey of Splatter Head across the dark corners of the internet.</p>
+                <p>Stay updated with every brain chomping update. Follow Splatter Head below.</p>
                 <div class="social-links">
-                    <a href="https://x.com/TheSplatterHead" target="_blank" rel="noopener noreferrer" title="Follow Splatter Head on X (formerly Twitter)">
-                        <img src="https://i.imgur.com/LUv0mID.png" alt="X (formerly Twitter) Icon">
+                    <a href="https://x.com/TheSplatterHead" target="_blank" rel="noopener noreferrer" title="Follow Splatter Head on X">
+                        <img src="https://i.imgur.com/LUv0mID.png" alt="X Icon" width="40">
                     </a>
                     <a href="https://www.youtube.com/@SplatterHead" target="_blank" rel="noopener noreferrer" title="Subscribe to Splatter Head on YouTube">
-                        <img src="https://i.imgur.com/LxE1dvN.png" alt="YouTube Icon">
+                        <img src="https://i.imgur.com/LxE1dvN.png" alt="YouTube Icon" width="40">
                     </a>
                 </div>
                 <p>Hit that follow button, spread the word like a zombie virus, and help me bring this army of clay abominations to life!</p>
             </section>
         </main>
         <footer>
-            <p><small>© 2025 Splatter Head - Created by <a href="contact.html">Jakub</a></small></p>
+            <p><small>© 2024 - 2026 Splatter Head | Created by <a href="contact.html">Jakub</a></small></p>
         </footer>
     </div>
 
     <script>
         const form = document.getElementById('contact-form');
         const thankYou = document.getElementById('form-thank-you');
-
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
             const formData = new FormData(form);

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
 Student Name: Jakub
-Date: 5/14/2025
+Date: 12/03/2025
 File Name: storyboard.html
 
  -->
@@ -15,14 +15,14 @@ File Name: storyboard.html
         <link rel="stylesheet" href="styles-gallery.css">
         <link href="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" rel="stylesheet">
         <style>
-             
             .featherlight .featherlight-content {
-                border: 10px solid #000000; background: #000000;
+                border: 10px solid #000000;
+                background: #000000;
                 padding: 5px;
             }
 
             .featherlight .featherlight-content img {
-                display: block !important; 
+                display: block !important;
                 padding: 0 !important; margin: 0 !important;
                 border: none !important;
                 outline: none !important;
@@ -36,17 +36,21 @@ File Name: storyboard.html
         <div class="container">
             <div class="blurred-background">
                 <header>
-                    <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                    <div class="logo-wrapper">
+                        <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                        <p class="header-tagline">Dying for a Drink.</p>
+                    </div>
                  </header>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                     <li><a href="behind.html">Behind the Scenes</a></li>
+                    <li><a href="behind.html">Behind the Scenes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contest.html">Contest</a></li>
+                    <li><a href="resources.html">Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="extra.html">Extra</a></li>
                 </ul>
              </nav>
             <div class="corner-ribbon">
@@ -58,53 +62,53 @@ File Name: storyboard.html
                 <section class="extra-section" style="margin-top: 20px; margin-bottom: 30px;">
                     <div class="extra-item">
                         <button class="extra-requirement" aria-expanded="false" aria-controls="extra-answer-pdf">The Storyboard PDF</button>
-                         <div class="extra-answer" id="extra-answer-pdf" role="region" aria-hidden="true">
+                        <div class="extra-answer" id="extra-answer-pdf" role="region" aria-hidden="true">
                             <iframe src="extra/Splatter Head - Storyboard.pdf" style="width:100%; height:600px; border: none;" title="Splatter Head Storyboard PDF"></iframe>
                             <p style="text-align: center; font-style: italic; font-size: 0.9em; margin-top: 5px; color: #ccc;">The Storyboard PDF.</p>
                         </div>
                     </div>
-                 </section>
+                </section>
                 <div class="gallery-grid storyboard-grid">
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/hi1x2fB.jpeg" data-featherlight="image" class="gallery">
                         <img src="https://i.imgur.com/hi1x2fB.jpeg" alt="Storyboard Page 1" loading="lazy">
-                         </a>
+                        </a>
                         <p>Storyboard Page 1</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/t0g2aMX.jpeg" data-featherlight="image" class="gallery">
+                        <a href="https://i.imgur.com/t0g2aMX.jpeg" data-featherlight="image" class="gallery">
                         <img src="https://i.imgur.com/t0g2aMX.jpeg" alt="Storyboard Page 2" loading="lazy">
                         </a>
                         <p>Storyboard Page 2</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/kd2qWgq.jpeg" data-featherlight="image" class="gallery">
                         <img src="https://i.imgur.com/kd2qWgq.jpeg" alt="Storyboard Page 3" loading="lazy">
-                         </a>
+                        </a>
                         <p>Storyboard Page 3</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/Uec0PGl.jpeg" data-featherlight="image" class="gallery">
+                        <a href="https://i.imgur.com/Uec0PGl.jpeg" data-featherlight="image" class="gallery">
                         <img src="https://i.imgur.com/Uec0PGl.jpeg" alt="Storyboard Page 4" loading="lazy">
                         </a>
                         <p>Storyboard Page 4</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/CXJVXlN.jpeg" data-featherlight="image" class="gallery">
                         <img src="https://i.imgur.com/CXJVXlN.jpeg" alt="Storyboard Page 5" loading="lazy">
-                         </a>
+                        </a>
                         <p>Storyboard Page 5</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/BKog71V.jpeg" data-featherlight="image" class="gallery">
+                        <a href="https://i.imgur.com/BKog71V.jpeg" data-featherlight="image" class="gallery">
                         <img src="https://i.imgur.com/BKog71V.jpeg" alt="Storyboard Page 6" loading="lazy">
                         </a>
                         <p>Storyboard Page 6</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/lrNslDg.jpeg" data-featherlight="image" class="gallery">
                         <img src="https://i.imgur.com/lrNslDg.jpeg" alt="Storyboard Page 7" loading="lazy">
-                         </a>
+                        </a>
                         <p>Storyboard Page 7</p>
                     </div>
                     <div class="gallery-item">
@@ -134,17 +138,15 @@ File Name: storyboard.html
                 </div>
             </main>
             <footer>
-                <p>© 2025 Splatter Head - Created by <a href="contact.html">Jakub</a></p>
+                <p><small>© 2024 - 2026 Splatter Head | Created by <a href="contact.html">Jakub</a></small></p>
             </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"></script>
         <script>
-            
             $(document).ready(function () {
-                 $('a[data-featherlight="image"]').featherlight();
+                $('a[data-featherlight="image"]').featherlight();
             });
-             
         </script>
         <script src="script.js"></script> 
     </body>

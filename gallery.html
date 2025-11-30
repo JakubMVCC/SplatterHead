@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
 Student Name: Jakub
-Date: 5/14/2025
+Date: 12/03/2025
 File Name: gallery.html
 
  -->
@@ -15,15 +15,14 @@ File Name: gallery.html
         <link rel="stylesheet" href="styles-gallery.css">
         <link href="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" rel="stylesheet">
         <style>
-            
             .featherlight .featherlight-content {
-                 border: 10px solid #000000;
+                border: 10px solid #000000;
                 background: #000000;
                 padding: 5px;
             }
 
             .featherlight .featherlight-content img {
-                display: block !important; 
+                display: block !important;
                 padding: 0 !important; margin: 0 !important;
                 border: none !important;
                 outline: none !important;
@@ -37,17 +36,21 @@ File Name: gallery.html
         <div class="container">
             <div class="blurred-background">
                 <header>
-                    <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                    <div class="logo-wrapper">
+                        <img src="https://i.imgur.com/H7HxBCW.png" alt="Splatter Head Logo" class="logo">
+                        <p class="header-tagline">Dying for a Drink.</p>
+                    </div>
                  </header>
             </div>
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                     <li><a href="behind.html">Behind the Scenes</a></li>
+                    <li><a href="behind.html">Behind the Scenes</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
                     <li><a href="contest.html">Contest</a></li>
+                    <li><a href="resources.html">Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="extra.html">Extra</a></li>
                 </ul>
              </nav>
             <div class="corner-ribbon">
@@ -65,30 +68,30 @@ File Name: gallery.html
                         <img src="https://i.imgur.com/BYMNGNI.jpeg" alt="Behind the scenes image 1" loading="lazy">
                         </a>
                         <p>Here is the large green poster paper I used for the grass, I think there were 3 in total taped together.</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/s4wir0W.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/s4wir0W.jpeg" alt="Behind the scenes image 2" loading="lazy">
-                         </a>
+                        </a>
                         <p>For the background, the blue paper had to be individually taped and painted on.</p>
                     </div>
                     <div class="gallery-item">
                          <a href="https://i.imgur.com/2Kdk0wH.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/2Kdk0wH.jpeg" alt="Behind the scenes image 3" loading="lazy">
                         </a>
-                         <p>One of the scenes being setup where Claykub is searching for his Shotgun.</p>
+                        <p>One of the scenes being setup where Claykub is searching for his Shotgun.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/AqC5oh4.jpeg" data-featherlight="image">
-                         <img src="https://i.imgur.com/AqC5oh4.jpeg" alt="Behind the scenes image 4" loading="lazy">
+                        <img src="https://i.imgur.com/AqC5oh4.jpeg" alt="Behind the scenes image 4" loading="lazy">
                         </a>
                         <p>Here are the colors I used when creating Claykub.</p>
                     </div>
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <a href="https://i.imgur.com/DptOHwO.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/DptOHwO.jpeg" alt="Behind the scenes image 5" loading="lazy">
                         </a>
-                         <p>Over time, the blue clay began to harden and chip away so it needed to be replaced.</p>
+                        <p>Over time, the blue clay began to harden and chip away so it needed to be replaced.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/oyD6rCc.jpeg" data-featherlight="image">
@@ -103,7 +106,7 @@ File Name: gallery.html
                         <p>The Zombies have seen better days.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/IR1DAXF.jpeg" data-featherlight="image">
+                        <a href="https://i.imgur.com/IR1DAXF.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/IR1DAXF.jpeg" alt="Behind the scenes image 8" loading="lazy">
                         </a>
                         <p>This skateboard was a VIP Gift for a band before I painted the bottom for Splatter Head.</p>
@@ -122,7 +125,7 @@ File Name: gallery.html
                         <p>I combined the Claymation Explosion with a Digital Explosion to give the Shotgun more of an impact whenever it was used.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/Qa74vnb.png" data-featherlight="image">
+                        <a href="https://i.imgur.com/Qa74vnb.png" data-featherlight="image">
                         <img src="https://i.imgur.com/Qa74vnb.png" alt="Behind the scenes image 10" loading="lazy">
                         </a>
                         <p>The cheesy background I made with paint, sharpies, and colored paper.</p>
@@ -136,25 +139,28 @@ File Name: gallery.html
                      <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/g6G2Kbc.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>A rickety green screen tracked footage of Claykub's phone with the timer counting down.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/FdvRnva.png" data-featherlight="image">
+                        <a href="https://i.imgur.com/FdvRnva.png" data-featherlight="image">
                         <img src="https://i.imgur.com/FdvRnva.png" alt="Behind the scenes image 12" loading="lazy">
                         </a>
                         <p>The cardboard TV I made for the opening shot.</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/V4uXM3p.mp4" type="video/mp4">
-                             Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>The scene of the Splatter Head Can rotating in Blender that was used during the TV Commercial.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/o1DKGeD.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>The Zombie running scene but with VFX.</p>
                     </div>
                     <div class="gallery-item">
@@ -187,7 +193,7 @@ File Name: gallery.html
                         </a>
                         <p>Here's a screenshot of what one of the scenes look like when created in Blender.</p>
                     </div>
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <a href="https://i.imgur.com/FkpE4Vn.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/FkpE4Vn.jpeg" alt="Behind the scenes image 18" loading="lazy">
                          </a>
@@ -198,123 +204,129 @@ File Name: gallery.html
                         <img src="https://i.imgur.com/F7aM8Ml.jpeg" alt="Behind the scenes image 19" loading="lazy">
                         </a>
                         <p>This is the Armature I made which then turned into Claykub.</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/7Da18K4.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/7Da18K4.jpeg" alt="Behind the scenes image 20" loading="lazy">
-                         </a>
+                        </a>
                         <p>Another picture of Claykub's Armature in the making.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/1RlBv6M.jpeg" data-featherlight="image">
+                        <a href="https://i.imgur.com/1RlBv6M.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/1RlBv6M.jpeg" alt="Behind the scenes image 21" loading="lazy">
                         </a>
                         <p>Here is the cheapest clay I found that worked the best for Splatter Head, it was labeled as 'Never Dries' which helps from making the clay harden over time.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/TNeyvf0.jpeg" data-featherlight="image">
-                         <img src="https://i.imgur.com/TNeyvf0.jpeg" alt="Behind the scenes image 22" loading="lazy">
+                        <img src="https://i.imgur.com/TNeyvf0.jpeg" alt="Behind the scenes image 22" loading="lazy">
                         </a>
                         <p>I was making the Zombie Figurine and just applied the tinfoil onto the Armature.</p>
                     </div>
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <a href="https://i.imgur.com/Jt2rhfA.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/Jt2rhfA.jpeg" alt="Behind the scenes image 23" loading="lazy">
                          </a>
                         <p>Both Claykub and Zombie 1 were made into Clay Figurines that were used throughout Splatter Head.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/niSCbo8.jpeg" data-featherlight="image">
+                        <a href="https://i.imgur.com/niSCbo8.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/niSCbo8.jpeg" alt="Behind the scenes image 24" loading="lazy">
                         </a>
                         <p>Claykub in his final form, with the wire glasses and stray hat.</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/VEzrXtz.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/VEzrXtz.jpeg" alt="Behind the scenes image 25" loading="lazy">
-                         </a>
+                        </a>
                         <p>One of the first scenes as Claykub sits with a drink watching TV.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/tOIFZ8N.png" data-featherlight="image">
-                        <img src="https://i.imgur.com/tOIFZ8N.png" alt="Behind the scenes image 26" loading="lazy">
+                        <a href="https://i.imgur.com/t0IFZ8N.png" data-featherlight="image">
+                        <img src="https://i.imgur.com/t0IFZ8N.png" alt="Behind the scenes image 26" loading="lazy">
                         </a>
-                         <p>A look at Claykub from behind right after being created to use as reference.</p>
+                        <p>A look at Claykub from behind right after being created to use as reference.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/eDUfcwK.png" data-featherlight="image">
-                         <img src="https://i.imgur.com/eDUfcwK.png" alt="Behind the scenes image 27" loading="lazy">
+                        <img src="https://i.imgur.com/eDUfcwK.png" alt="Behind the scenes image 27" loading="lazy">
                         </a>
                         <p>The original Claykub completed. If only he stayed looking that fresh after Splatter Head was done.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/ixuNl0z.png" data-featherlight="image">
-                         <img src="https://i.imgur.com/ixuNl0z.png" alt="Behind the scenes image 28" loading="lazy">
+                        <img src="https://i.imgur.com/ixuNl0z.png" alt="Behind the scenes image 28" loading="lazy">
                         </a>
                         <p>The background stitched together in PhotoShop and cleaned up to be used in the Blender Scenes.</p>
                     </div>
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <a href="https://i.imgur.com/1zFpREk.png" data-featherlight="image">
                         <img src="https://i.imgur.com/1zFpREk.png" alt="Behind the scenes image 29" loading="lazy">
                         </a>
-                         <p>I used PhotoShop to make the sky look larger for whenever I needed scenes that were above the trees.</p>
+                        <p>I used PhotoShop to make the sky look larger for whenever I needed scenes that were above the trees.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/9V4czoH.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>A look at how I made Claykub fly in the air using the Shotgun and a Zombie.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/OjmHlam.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Red Screen footage of the Zombie falling over.</p>
                     </div>
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/GTAltMc.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Animated Zombie 1 that I used in the Skateboard Shotgun Blender Scene.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/rH8TEnW.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Footage of the Zombie Running Scene before VFX was applied to remove the Animation Rig & Supports.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/Dxzgqh0.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Slowed down version of the Zombie battle scene before VFX were added.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/Au5dpUp.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>The Zombie running scene but without VFX.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/ODZtzDO.jpeg" data-featherlight="image">
-                         <img src="https://i.imgur.com/ODZtzDO.jpeg" alt="Behind the scenes image 30" loading="lazy">
+                        <img src="https://i.imgur.com/ODZtzDO.jpeg" alt="Behind the scenes image 30" loading="lazy">
                         </a>
                         <p>The figurines and props sat undisturbed inside the Walfart Shoebox since Fall 2024, Claykub was already crumbling by the end of Part 1.</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/t8M28Inkmns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                         <p>This was one of the original claymation tests I did before adding VFX.</p>
+                        <p>This was one of the original claymation tests I did before adding VFX.</p>
                     </div>
                     <div class="gallery-item">
                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/7gY0gGMQ0yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>Claykub walks into Walfart and looks around, I was running out of time and didn't feel like animating this.</p>
                     </div>
                     <div class="gallery-item">
-                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/IlywddoFLwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/IlywddoFLwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>"Footage of Claykub's arm that I recorded in front of a Red Screen to use for the Skydiving Scene.</p>
                     </div>
                     <div class="gallery-item">
-                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/BTBSTTrMYiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/BTBSTTrMYiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p>Footage of Claykub Skydiving in front of a Red Screen that was easier to use than manually animating.</p>
                     </div>
                     <div class="gallery-item">
@@ -325,71 +337,76 @@ File Name: gallery.html
                          <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/kPxpGjK.mp4" type="video/mp4">
                             Your browser does not support the video tag.
-                         </video>
+                        </video>
                         <p>The POV view of Claykub skating towards the Zombie, putting the shotgun in its mouth, then exploding its head off before being launched towards the Helicopter.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/n5xRpxV.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Animated Zombie having his head shot off and falling over that I used in the Skateboard Shotgun Blender Scene.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/yVVHgId.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>One of the Zombies animation getting his leg blown off that was used in the Skateboard Shotgun Blender Scene.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/Y2Qa9hY.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>One of the other Zombies animation that was used in the Skateboard Shotgun Blender Scene.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/ZYCAfgp.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>One of the other Zombies animation that was used in the Skateboard Shotgun Blender Scene.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/BlK4lMb.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Footage of Claykub behind a Red Screen as I rotated him at random before animating this in the Skateboard Shotgun Blender Scene.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://imgur.com/exxddn1.jpeg" data-featherlight="image">
+                        <a href="https://imgur.com/exxddn1.jpeg" data-featherlight="image">
                         <img src="https://imgur.com/exxddn1.jpeg" alt="Behind the scenes image 31" loading="lazy">
                         </a>
                         <p>Claykub has been sitting in a box since Fall 2024 and is falling apart due to the Oven Bake clay.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://imgur.com/sRS3zkl.jpeg" data-featherlight="image">
-                         <img src="https://imgur.com/sRS3zkl.jpeg" alt="Behind the scenes image 32" loading="lazy">
+                        <img src="https://imgur.com/sRS3zkl.jpeg" alt="Behind the scenes image 32" loading="lazy">
                         </a>
                         <p>Here's the size comparison of the Walfart Shoe Box to Claykub (He's seen better days).</p>
                     </div>
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <a href="https://imgur.com/5uGf7ss.jpeg" data-featherlight="image">
                         <img src="https://imgur.com/5uGf7ss.jpeg" alt="Behind the scenes image 33" loading="lazy">
                         </a>
-                         <p>Claykub's Hat I found that perfectly resembled my hat in real life.</p>
+                        <p>Claykub's Hat I found that perfectly resembled my hat in real life.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://imgur.com/MEqacJD.jpeg" data-featherlight="image">
-                         <img src="https://imgur.com/MEqacJD.jpeg" alt="Behind the scenes image 34" loading="lazy">
+                        <img src="https://imgur.com/MEqacJD.jpeg" alt="Behind the scenes image 34" loading="lazy">
                         </a>
                         <p>Images of Claykub's Cardboard Backpack that I used as Reference when making the 3D Model.</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://imgur.com/puaX58B.jpeg" data-featherlight="image">
                         <img src="https://imgur.com/puaX58B.jpeg" alt="Behind the scenes image 35" loading="lazy">
-                         </a>
+                        </a>
                         <p>The cardboard shotgun I made for Claykub.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://imgur.com/OqCvMIM.jpeg" data-featherlight="image">
+                        <a href="https://imgur.com/OqCvMIM.jpeg" data-featherlight="image">
                         <img src="https://imgur.com/OqCvMIM.jpeg" alt="Behind the scenes image 36" loading="lazy">
                         </a>
                         <p>Here is the main zombie from all angles used as reference for 3D Modeling.</p>
@@ -397,43 +414,50 @@ File Name: gallery.html
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/d9TZWSg.mp4" type="video/mp4">
-                             Your browser does not support the video tag. </video>
+                             Your browser does not support the video tag.
+                        </video>
                         <p>The 3D Model I made for the Helicopter Controls.</p>
                     </div>
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/KNNAUnn.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>The 3D Model of the Zombie I made in Blender.</p>
                     </div>
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/Do3XZWU.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>3D Model of a Helicopter I made, the detailed controls inside was the hardest part.</p>
                     </div>
                     <div class="gallery-item">
-                         <video controls width="100%" autoplay loop muted>
+                        <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/zyHJagh.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Claykub's Backpack modeled in 3D using Blender.</p>
                     </div>
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/vGiwbS5.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>The 3D Model I made of Claykub... 3DKub? DigiKub? PolyKub? Who knows.</p>
                     </div>
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
-                             <source src="https://i.imgur.com/apM1Wlc.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            <source src="https://i.imgur.com/apM1Wlc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                         <p>Claykub's 3D Shotgun that I made in Blender.</p>
                     </div>
                     <div class="gallery-item">
                         <video controls width="100%" autoplay loop muted>
                             <source src="https://i.imgur.com/CUjUW40.mp4" type="video/mp4">
-                            Your browser does not support the video tag. </video>
+                            Your browser does not support the video tag.
+                        </video>
                         <p>The 3D Model of the Skateboard I made in Blender.</p>
                     </div>
                     <div class="gallery-item">
@@ -441,40 +465,40 @@ File Name: gallery.html
                         <img src="https://i.imgur.com/i28XRTD.jpeg" alt="Behind the scenes image 37" loading="lazy">
                         </a>
                         <p>The 'Helping Hands' I took apart to create my Animation Rig.</p>
-                     </div>
+                    </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/wr4t71d.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/wr4t71d.jpeg" alt="Behind the scenes image 38" loading="lazy">
-                         </a>
+                        </a>
                         <p>I bought 2 of these giant magnets to place underneath the figurines and then about 10 smaller magnets that were placed inside the figurine's feet.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/wUQokhr.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/wUQokhr.jpeg" alt="Behind the scenes image 39" loading="lazy">
                         </a>
-                         <p>Another look at my DIY Animation Rig.</p>
+                        <p>Another look at my DIY Animation Rig.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/PXIBeUx.jpeg" data-featherlight="image">
-                         <img src="https://i.imgur.com/PXIBeUx.jpeg" alt="Behind the scenes image 40" loading="lazy">
+                        <img src="https://i.imgur.com/PXIBeUx.jpeg" alt="Behind the scenes image 40" loading="lazy">
                         </a>
                         <p>The wire I used to create my Armatures which then turned into the Clay Figurines.</p>
                     </div>
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <a href="https://i.imgur.com/cWgf4yG.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/cWgf4yG.jpeg" alt="Behind the scenes image 41" loading="lazy">
                         </a>
-                         <p>The Hot Glue Gun I used to put together the Sets as well as attach the Hat and Glasses to Claykub.</p>
+                        <p>The Hot Glue Gun I used to put together the Sets as well as attach the Hat and Glasses to Claykub.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/Ajf6RHw.jpeg" data-featherlight="image">
+                        <a href="https://i.imgur.com/Ajf6RHw.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/Ajf6RHw.jpeg" alt="Behind the scenes image 42" loading="lazy">
                         </a>
                         <p>These are the random paint brushes I used for creating the Set and Background. As well as the clay shaping tools that came with the clay.</p>
                     </div>
                     <div class="gallery-item">
                         <a href="https://i.imgur.com/hTM86jd.jpeg" data-featherlight="image">
-                         <img src="https://i.imgur.com/hTM86jd.jpeg" alt="Behind the scenes image 43" loading="lazy">
+                        <img src="https://i.imgur.com/hTM86jd.jpeg" alt="Behind the scenes image 43" loading="lazy">
                         </a>
                         <p>I took apart 'Helping Hands' and combined them with a Clamp that can rotate to make a DIY Animation Rig.</p>
                     </div>
@@ -485,7 +509,7 @@ File Name: gallery.html
                          <p>Both the Oven Baked and Never Drying clay, for Claymation I'd recommend avoiding the Oven Baked clay.</p>
                     </div>
                     <div class="gallery-item">
-                         <a href="https://i.imgur.com/B9YyxSs.jpeg" data-featherlight="image">
+                        <a href="https://i.imgur.com/B9YyxSs.jpeg" data-featherlight="image">
                         <img src="https://i.imgur.com/B9YyxSs.jpeg" alt="Behind the scenes image 45" loading="lazy">
                         </a>
                         <p>An image of most of the tools I used for creating the Armatures for Splatter Head.</p>
@@ -511,7 +535,7 @@ File Name: gallery.html
             </div>
         </main>
         <footer>
-            <p>© 2025 Splatter Head - Created by <a href="contact.html">Jakub</a></p>
+            <p><small>© 2024 - 2026 Splatter Head | Created by <a href="contact.html">Jakub</a></small></p>
         </footer>
     </div>
 
@@ -522,9 +546,11 @@ File Name: gallery.html
     <script>
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1)); [array[i], array[j]] = [array[j], array[i]];
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
             }
-            return array; }
+            return array;
+        }
 
         document.addEventListener('DOMContentLoaded', function() {
             var galleryGrid = document.querySelector('.gallery-grid');
@@ -543,13 +569,14 @@ File Name: gallery.html
             imagesLoaded( galleryGrid, function() {
                 var msnry = new Masonry( galleryGrid, {
                     itemSelector: '.gallery-item',
-                     columnWidth: '.gallery-item',
+                    columnWidth: '.gallery-item',
                     percentPosition: true
                 });
                 
                 $(galleryGrid).find('a[data-featherlight="image"]').featherlight();
-             });
-        }); </script>
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
