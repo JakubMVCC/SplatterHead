@@ -635,30 +635,155 @@ footer {
     visibility: visible;
 }
 
+/* =========================================
+   MOBILE BACK TO TOP BUTTON
+   ========================================= */
+#mobile-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f35628;
+    color: #111;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.1s ease;
+    display: none; /* Hidden on desktop */
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+}
 
+#mobile-back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#mobile-back-to-top:active {
+    transform: scale(0.9);
+}
+
+
+/* =========================================
+   MOBILE OPTIMIZATION (Up to 768px)
+   ========================================= */
 @media (max-width: 768px) {
-    h1 { font-size: 2.2em; }
-    h2 { font-size: 1.7em;
+    /* 1. COMPLETELY PREVENT HORIZONTAL SCROLLING */
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+        width: 100%;
     }
+
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.7em; }
     h3 { font-size: 1.4em; }
 
+    /* Show the Back to Top button only on mobile */
+    #mobile-back-to-top {
+        display: flex;
+    }
+
+    /* 2. Fix the Tagline Over-extending the Screen */
+    .logo {
+        max-width: 200px;
+    }
+    .header-tagline {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        margin-top: 10px;
+        min-width: 0 !important; /* This overrides the 400px rule causing the overflow */
+        width: 100%;
+        font-size: 1.4em;
+    }
+    .logo-wrapper:hover .logo {
+        opacity: 1; 
+    }
+
+    /* 3. Ensure Nav is locked perfectly edge-to-edge */
     nav {
         background: #f35628;
+        padding: 8px 0;
+        width: 100%;
+        box-sizing: border-box;
+        left: 0;
     }
-
     nav ul {
-        flex-direction: column;
-        gap: 5px 0;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center;
+        padding: 0 5px;
+        gap: 6px;
+        margin: 0;
     }
-
+    nav ul li {
+        flex: 0 1 auto; 
+    }
     nav ul li a {
-        padding: 12px 15px;
-        font-size: 0.95em;
+        padding: 8px 12px;
+        font-size: 0.9em;
+        white-space: nowrap;
+        background: rgba(0, 0, 0, 0.15); 
+        border-radius: 4px;
     }
 
+    /* 4. Compact 2-Line Mobile Banner & Outline Fix */
+    .corner-ribbon {
+        position: static;
+        width: 100%;
+        height: auto;
+        clip-path: none;
+        background-color: #FFFF00;
+        box-shadow: none;
+        border-bottom: 2px solid #111;
+        padding: 12px 5px; /* Added a tiny bit more padding to frame the 2 lines */
+        box-sizing: border-box;
+        display: block; /* Switched to block to let the text center cleanly */
+        text-align: center;
+    }
+    .corner-ribbon a, .corner-ribbon a:focus {
+        transform: none;
+        position: static;
+        font-size: 0; /* Hides original HTML text and <br>s */
+        padding: 0;
+        top: auto;
+        left: auto;
+        width: 100%;
+        outline: none !important;
+        border: none !important;
+        text-decoration: none !important;
+        -webkit-tap-highlight-color: transparent;
+        display: block;
+    }
+    .corner-ribbon a::after {
+        content: "WIN A CHANCE TO HAVE YOURSELF \A ANIMATED AS A ZOMBIE!!!"; /* \A forces exactly one line break */
+        font-size: 16px; 
+        color: black;
+        line-height: 1.4;
+        white-space: pre-wrap; /* Crucial: Allows the \A to act as a line break */
+        display: block;
+        font-weight: bold;
+    }
+
+    /* 5. Maximize Content Real Estate & Prevent Overflow */
     main.page-content {
-        width: 95%;
-        padding: 20px 3%;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
+        margin: 0; 
+        border-radius: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
     
     .paragraph-with-image {
@@ -675,7 +800,7 @@ footer {
 
     .paragraph-with-image .paragraph-image,
     .paragraph-with-image .paragraph-image-left {
-        width: 80%;
+        width: 100%;
         max-width: 300px;
         height: auto;
         margin: 0 auto;
@@ -696,9 +821,9 @@ footer {
 
     .explore-text {
         position: static;
-        max-width: 95%;
-        margin: 0 auto;
-        padding: 10px 15px;
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
         filter: none;
         order: 1;
     }
@@ -727,61 +852,45 @@ footer {
         box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     }
 
-    .corner-ribbon {
-        background-color: #FFFF00; 
-        width: 180px;
-        height: 170px;
-    }
-
-    .corner-ribbon a {
-        font-size: 18px;
-        top: -40px;
-        left: -40px;
-    }
-
     .video-container {
-        max-width: 95%;
+        max-width: 100%;
+        border-radius: 0;
     }
+
     .faq-answer.active,
     .extra-answer.active {
         max-height: 1000px;
     }
 }
 
+/* =========================================
+   EXTRA SMALL SCREENS (Up to 480px)
+   ========================================= */
 @media (max-width: 480px) {
     h1 { font-size: 1.8em; }
-    h2 { font-size: 1.5em;
-    }
+    h2 { font-size: 1.5em; }
     h3 { font-size: 1.2em; }
 
     .logo {
-        max-width: 200px;
+        max-width: 160px;
     }
 
-    nav {
-        background: #f35628;
+    .header-tagline {
+        font-size: 1.2em;
     }
 
     nav ul li a {
-        font-size: 0.9em;
-        padding: 10px;
+        font-size: 0.85em;
+        padding: 6px 8px; 
     }
 
-    .corner-ribbon {
-        background-color: #FFFF00; 
-        width: 130px;
-        height: 120px;
-    }
-
-    .corner-ribbon a {
-        font-size: 14px;
-        top: -25px;
-        left: -30px;
-        line-height: 1.1;
+    .corner-ribbon a::after {
+        font-size: 14px; /* Scaled down slightly for tiny phone screens */
     }
 
     #contact-form button[type="submit"] {
         padding: 10px 20px;
         font-size: 0.9em;
+        width: 100%; 
     }
 }

@@ -43,20 +43,28 @@ File Name: styles-gallery.css
         grid-template-columns: repeat(3, 1fr); }
 }
 
-
+/* Added responsive expansion for the grid containers */
 @media (max-width: 768px) {
+    .gallery-grid.storyboard-grid {
+        width: 100%; 
+    }
     .gallery-item:not(.storyboard-grid .gallery-item) { 
         width: calc(50% - 20px); 
     }
 }
 
+/* Made sure single columns take full space with no awkward margins */
 @media (max-width: 480px) {
+    .gallery-grid {
+        margin-top: 20px;
+    }
     .gallery-item:not(.storyboard-grid .gallery-item) {
-        width: calc(100% - 20px); 
+        width: calc(100% - 10px); 
+        margin: 10px 5px; 
     }
 }
 
-.gallery-item img, .gallery-item video {
+.gallery-item img, .gallery-item video, .gallery-item iframe {
     max-width: 100%;
     height: auto; display: block;
     margin-bottom: 10px;

@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
     const faqItems = document.querySelectorAll('.faq-item'); faqItems.forEach((item, index) => {
         const questionButton = item.querySelector('.faq-question');
         const answerDiv = item.querySelector('.faq-answer');
@@ -54,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (questionButton && answerDiv) {
             answerDiv.id = panelId;
             questionButton.setAttribute('aria-controls', panelId);
-
 
              const isInitiallyActive = answerDiv.classList.contains('active');
             questionButton.setAttribute('aria-expanded', isInitiallyActive.toString());
@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }); }
     });
 
-
     const extraItems = document.querySelectorAll('.extra-item'); extraItems.forEach((item, index) => {
         const requirementButton = item.querySelector('.extra-requirement');
         const answerDiv = item.querySelector('.extra-answer');
@@ -110,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (requirementButton && answerDiv) {
             answerDiv.id = panelId;
             requirementButton.setAttribute('aria-controls', panelId);
-
 
              const isInitiallyActive = answerDiv.classList.contains('active');
             requirementButton.setAttribute('aria-expanded', isInitiallyActive.toString());
@@ -157,7 +155,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }); }
     });
 
-
     const contactForm = document.getElementById('contact-form'); const thankYouMessage = document.getElementById('form-thank-you');
     if (contactForm && thankYouMessage) {
         contactForm.addEventListener('submit', function(event) {
@@ -173,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                      }
             });
-
 
             const emailInput = contactForm.querySelector('input[type="email"][required]');
             if (emailInput && emailInput.value.trim() && !/^\S+@\S+\.\S+$/.test(emailInput.value)) {
@@ -192,5 +188,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 const firstInvalid = contactForm.querySelector('[style*="border-color: red"]'); if (firstInvalid) {
                     firstInvalid.focus(); }
             }
-        }); }
+        }); 
+    }
+
+    // --- BACK TO TOP BUTTON LOGIC ---
+    // Dynamically create the button so you don't have to edit all 10 HTML files
+    const backToTopBtn = document.createElement('button');
+    backToTopBtn.id = 'mobile-back-to-top';
+    backToTopBtn.innerHTML = '&#8679;'; // HTML entity for Up Arrow
+    backToTopBtn.setAttribute('aria-label', 'Back to top');
+    document.body.appendChild(backToTopBtn);
+
+    // Show/hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.innerWidth <= 768) {
+            if (window.scrollY > 350) { // Shows up after scrolling down 350px
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        } else {
+            backToTopBtn.classList.remove('show'); // Ensure it stays hidden on desktop
+        }
+    });
+
+    // Scroll smoothly to the top when clicked
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
 });
